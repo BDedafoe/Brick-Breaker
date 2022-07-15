@@ -7,8 +7,8 @@ let x = canvas.width/2;
 let y = canvas.height-30;
 //You need to add values to x and y after every frame to make it look like the ball is moving
 //list variables here and then add this to the 'draw' function on the bottom
-let dx = 2;
-let dy = -2;
+let dx = 3;
+let dy = -3;
 //variables for the paddle function 
 //list variables here and then add this to the 'draw' function on the bottom
 var paddleHeight = 15;
