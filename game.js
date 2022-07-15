@@ -122,7 +122,7 @@ function drawBricks() {
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
                 gradient.addColorStop(0, 'blue');
                 gradient.addColorStop(0.5, 'aqua');
-                gradient.addColorStop(1, 'blue');
+                gradient.addColorStop(1, 'hotpink');
                 ctx.fillStyle = gradient;
                 ctx.fill();
                 ctx.closePath();
@@ -133,13 +133,13 @@ function drawBricks() {
 //function for tracking player's score
 function drawScore() {
     ctx.font = "bold 18px Arial";
-    ctx.fillStyle = "hotpink";
+    ctx.fillStyle = "white";
     ctx.fillText("Score: "+score, 8, 20);
 }
 
 function drawLives() {
     ctx.font = "bold 18px Arial";
-    ctx.fillStyle = "limegreen";
+    ctx.fillStyle = "white";
     ctx.fillText("Lives: "+lives, canvas.width-75, 20);
 }
 
