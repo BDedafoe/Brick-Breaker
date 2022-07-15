@@ -11,20 +11,20 @@ let dx = 2;
 let dy = -2;
 //variables for the paddle function 
 //list variables here and then add this to the 'draw' function on the bottom
-var paddleHeight = 12;
+var paddleHeight = 15;
 var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
 //variables for the paddle movement if pressed left or right
 var rightPressed = false;
 var leftPressed = false;
 //Making the brick variables at the top to destroy with the ball. Add this to the bricks function
-var brickRowCount = 5; //making the start with three bricks high
-var brickColumnCount = 5;  //making the start with 5 bricks across
+var brickRowCount = 6; //making the start with three bricks high
+var brickColumnCount = 6;  //making the start with 5 bricks across
 var brickWidth = 75;
 var brickHeight = 20;
 var brickPadding = 10;
 var brickOffsetTop = 50;
-var brickOffsetLeft = 30;
+var brickOffsetLeft = 50;
 //Add variable to track player's score
 var score = 0;
 //Add variable to track number of player lives
@@ -98,7 +98,7 @@ function drawBall () {
 }
 
 function drawPaddle() {
-    var paddleGradient = ctx.createLinearGradient(480, 25, 20, 18);
+    var paddleGradient = ctx.createLinearGradient(550, 25, 20, 20);
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
     paddleGradient.addColorStop(0, 'blue');
