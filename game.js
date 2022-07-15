@@ -139,7 +139,7 @@ function drawScore() {
 
 function drawLives() {
     ctx.font = "bold 18px Arial";
-    ctx.fillStyle = "hotpink";
+    ctx.fillStyle = "limegreen";
     ctx.fillText("Lives: "+lives, canvas.width-75, 20);
 }
 
